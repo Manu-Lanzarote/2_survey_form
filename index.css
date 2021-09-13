@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Estadio_Wanda_Metropolitano_%282018%29.jpg/1200px-Estadio_Wanda_Metropolitano_%282018%29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  background-color: rgba(145, 0, 0, 0.603);
+  min-height: 100vh;
+}
+
+.formulario {
+  color: white;
+  margin: 5% 25%;
+}
+
+h1,
+p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+form {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: pink;
+  padding-bottom: 3px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#socio {
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+#submit {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: pink;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin: 5% 10%;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="formulario">
+        <h1 id="title">HAZTE SOCIO DEL ATLÉTICO DE MADRID</h1>
+        <p id="description">
+          Rellena el siguiente formulario y forma parte de la historia del
+          Atlético de Madrid
+        </p>
+        <form id="survey-form">
+          <label for="nombre" id="name-label">Introduzca su nombre</label>
+          <input
+            type="text"
+            placeholder="Nombre"
+            name="nombre"
+            id="name"
+            required
+          />
+          <label for="correo" id="email-label">Correo electrónico</label>
+          <input
+            type="email"
+            placeholder="Introduzca su email"
+            name="correo"
+            id="email"
+            required
+          />
+          <label for="numero" id="number-label">Introduzca su edad</label>
+          <input
+            type="number"
+            placeholder="Edad"
+            name="numero"
+            min="18"
+            max="80"
+            id="number"
+          />
+          <label>¿Quieres ser socio o abonado del club?</label>
+          <label for="socio">
+            <input id="socio" type="radio" name="socio-abonado" value="socio" />
+            Socio
+          </label>
+          <label for="abonado">
+            <input
+              id="abonado"
+              type="radio"
+              name="socio-abonado"
+              value="abonado"
+            />
+            Abonado
+          </label>
+          <label for="jugador">Elije tu jugador favorito</label>
+          <input
+            list="jugadores"
+            name="jugador"
+            id="dropdown"
+            placeholder="Selecciona un jugador"
+          />
+          <datalist id="jugadores">
+            <option value="Oblack"></option>
+            <option value="Savic"></option>
+            <option value="Koke"></option>
+            <option value="Joao Félix"></option>
+            <option value="Correa"></option>
+            <option value="Carrasco"></option>
+            <option value="Griezman"></option>
+            <option value="Luis Suarez"></option>
+          </datalist>
+          <label>¿A qué competiciones quieres asistir?</label>
+          <label for="liga">
+            <input
+              id="liga"
+              type="checkbox"
+              name="competiciones"
+              value="liga"
+            />
+            Liga
+          </label>
+          <label for="champions">
+            <input
+              id="champions"
+              type="checkbox"
+              name="competiciones"
+              value="champions"
+            />
+            Champions League
+          </label>
+          <label for="copa">
+            <input
+              id="copa"
+              type="checkbox"
+              name="competiciones"
+              value="copa"
+            />
+            Copa del Rey
+          </label>
+          <label for="textarea">¡Algún comentario o sugerencia?</label>
+          <textarea
+            placeholder="Introduce tus comentarios aquí..."
+            rows="5"
+          ></textarea>
+          <label for="enviar">
+            <input type="submit" id="submit" value="ENVIAR" />
+          </label>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
